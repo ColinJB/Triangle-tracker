@@ -8,6 +8,6 @@ class Triangle {
     mSide1 = side1;
     mSide2 = side2;
     mSide3 = side3;
-    myType = type;
+    mType = type;
   }
 }
