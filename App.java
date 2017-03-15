@@ -38,6 +38,17 @@ public class App {
           System.out.println( newTriangle.mSide3 );
           System.out.println( newTriangle.mType );
           System.out.println( "Your new triangle has been added to the queue." );
+        } else if ( (side1 == side2 && side2 != side3) || (side2 == side3 && side3 != side1)  || (side1 == side3 && side3 != side2) ) {
+          String type = "Isosceles";
+          Triangle newTriangle = new Triangle(side1, side2, side3, type);
+          allTriangles.add(newTriangle);
+          System.out.println("Great! Here is your triangle:");
+          System.out.println("--------------");
+          System.out.println( newTriangle.mSide1 );
+          System.out.println( newTriangle.mSide2 );
+          System.out.println( newTriangle.mSide3 );
+          System.out.println( newTriangle.mType );
+          System.out.println( "Your new triangle has been added to the queue." );
         }
 
         Triangle newTriangle = new Triangle(side1, side2, side3,);
